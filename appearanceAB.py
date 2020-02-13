@@ -4,8 +4,8 @@ b = [5, 3, 7]
 board = ['1', '|', '2', '|', '3', '\n', '4', '|', '5', '|', '6', '\n', '7', '|', '8', '|', '9']'''
 board = ['_', '|', '_', '|', '_', '\n', '_', '|', '_', '|', '_', '\n', ' ', '|', ' ', '|', ' ']
 def appearance(a, b):
-    for d in a:
-        board[d*2]= 'x'
-    for d in b:
-        board[d*2]= 'o'
-    print(''.join(board))
+        for d in a:
+            board[d*2]= 'x'
+        for d in b:
+            board[d*2]= 'o'
+        print(''.join(board))
