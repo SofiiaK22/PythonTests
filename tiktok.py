@@ -10,20 +10,18 @@ def wonlost():
                 elif f[0] in b and f[1] in b and f[2] in b:
                         print("won B")
                         break
-board = ['1', '|', '2', '|', '3', '\n', '4', '|', '5', '|', '6', '\n', '7', '|', '8', '|', '9']
-print(''.join(board))
+from appearanceAB import appearance
+appearance(a, b)
 while k < 4:
-    n1 = int(input())
+    n1 = int(input()) - 1
     a.append(n1)
-    board[(n1-1)*2]= 'x'
+    appearance(a, b)
     wonlost()
-    print(''.join(board))
-    n2 = int(input())
+    n2 = int(input()) - 1
     b.append(n2)
+    appearance(a, b)
     wonlost()
-    board[(n2-1)*2]= 'o'
-    print(''.join(board))
-    k += 1
+k += 1
 n3 = int(input())
 a.append(n3)
 wonlost()
