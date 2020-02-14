@@ -1,1 +1,7 @@
-N = 24
+N = int(input("Number of games:"))
+values = list(input("List:"))
+lastGame = input("Last Game:")
+a = values.count('K')
+b = values.count('V')
+print(a + ":" + b)
+print(lastGame)
