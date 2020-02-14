@@ -13,6 +13,7 @@ def wonlost():
 
 from appearanceAB import appearance
 appearance(a, b)
+#from won import wonlost1
 conin = ''
 while k < 4:
     for m in dictionary:
