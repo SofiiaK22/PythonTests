@@ -10,16 +10,27 @@ def wonlost():
                 if f[0] in s and f[1] in s and f[2] in s:
                     print("won!")
                     break
+
 from appearanceAB import appearance
 appearance(a, b)
+conin = ''
 while k < 4:
     for m in dictionary:
         s = dictionary[m]
-        n1 = int(input()) - 1
+        conin = input()
+        '''if conin == 's':
+            print("Use another number:")
+            break
+            n1 = int(conin) - 1
+            continue'''
+        if conin == '':
+            print("End of the game, thanks for playing!")
+            break
+        n1 = int(conin) - 1
         if n1 in a or n1 in b or n1 > 8 or n1 < -1:
             print("Use another number:")
             break
-            n1 = int(input()) - 1
+            n1 = int(conin) - 1
             continue
         else:
             s.append(n1)
